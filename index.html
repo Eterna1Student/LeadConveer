@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadConveer</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a class="logo" href="index.html">
+                <img src="images/picture/LOGO.png" alt="logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li>
+                        <a class="nav__list-item" href="/#swiper">Как&nbsp;это&nbsp;работает</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="/#cost">Цена</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="/#reviews">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" href="/#contact">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts">
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icon/whatsapp.svg" alt="whatsapp">
+                        </a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/icon/tg.svg" alt="tg"> 
+                        </a>                    
+                    </li>
+                    <li class="header__contacts-item">
+                        <a class="header__num" href="tel:+74951183282">+7&nbsp;495&nbsp;118-32-82</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="burger__btn" id="burgerBtn">
+                <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.3917 3.88303H7.78105C6.89153 3.88303 6.17273 3.11496 6.17273 2.1762C6.17273 1.23745 6.89153 0.469378 7.78105 0.469378H25.3917C26.2812 0.469378 27 1.23745 27 2.1762C27 3.11496 26.2812 3.88303 25.3917 3.88303Z"
+                        fill="#fff" />
+                    <path
+                        d="M2.29118 4.35241C3.55657 4.35241 4.58236 3.37809 4.58236 2.1762C4.58236 0.97432 3.55657 0 2.29118 0C1.0258 0 0 0.97432 0 2.1762C0 3.37809 1.0258 4.35241 2.29118 4.35241Z"
+                        fill="#fff" />
+                    <path
+                        d="M25.3917 10.2068H7.78105C6.89153 10.2068 6.17273 9.43876 6.17273 8.5C6.17273 7.56125 6.89153 6.79317 7.78105 6.79317H25.3917C26.2812 6.79317 27 7.56125 27 8.5C27 9.43876 26.2812 10.2068 25.3917 10.2068Z"
+                        fill="#fff" />
+                    <path
+                        d="M2.29118 10.6762C3.55657 10.6762 4.58236 9.70188 4.58236 8.5C4.58236 7.29812 3.55657 6.3238 2.29118 6.3238C1.0258 6.3238 0 7.29812 0 8.5C0 9.70188 1.0258 10.6762 2.29118 10.6762Z"
+                        fill="#fff" />
+                    <path
+                        d="M25.3917 16.5306H7.78105C6.89153 16.5306 6.17273 15.7626 6.17273 14.8238C6.17273 13.885 6.89153 13.117 7.78105 13.117H25.3917C26.2812 13.117 27 13.885 27 14.8238C27 15.7626 26.2812 16.5306 25.3917 16.5306Z"
+                        fill="#fff" />
+                    <path
+                        d="M2.29118 17C3.55657 17 4.58236 16.0257 4.58236 14.8238C4.58236 13.6219 3.55657 12.6476 2.29118 12.6476C1.0258 12.6476 0 13.6219 0 14.8238C0 16.0257 1.0258 17 2.29118 17Z"
+                        fill="#fff" />
+                </svg>
+            </div>
+            <div class="burger" id="burger">
+                <ul class="burger__list">
+                    <li class="burger__item">
+                        <button id="burger__close">
+                            <svg width="20" height="20" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-5" x2="136.774" y2="-5" transform="matrix(0.706758 -0.707455 0.706758 0.707455 7.69041 104.464)" stroke="#FEFEFE" stroke-width="10"/>
+                                <path d="M4.35672 4.46448L101.023 101.226" stroke="#FEFEFE" stroke-width="10"/>
+                            </svg>     
+                        </button>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" id="burgerLink" href="/#swiper">Как&nbsp;это&nbsp;работает</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" id="burgerLink" href="/#cost">Цена</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" id="burgerLink" href="/#reviews">Отзывы</a>
+                    </li>
+                    <li>
+                        <a class="nav__list-item" id="burgerLink" href="/#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+   
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Лидогенерация
+                        <span>для бизнеса</span>
+                    </h1>
+                    <p class="hero__desc">
+                        Покупайте только целевые лиды по&nbsp;фиксированной цене от 300 ₽
+                    </p>
+                    <button class="btn">Выбрать пакет лидов</button>
+                </div>
+                <div class="hero__bg">
+                    <img src="./images/picture/heroBG.png" alt="picture">
+                </div>
+                <nav class="hero__nav">
+                    <ul class="hero__list">
+                        <li class="hero__item">
+                            <a href="#">Лидогенерация в b2b</a>           
+                        </li>
+                        <li class="hero__item">
+                            <a href="#">Биржа лидов</a>                            
+                        </li>
+                        <li class="hero__item">
+                            <a href="#">Сервис по Лидгену</a>                           
+                        </li>
+                        <li class="hero__item">
+                           <a href="#">Лиды для производства</a>                           
+                        </li>
+                        <li class="hero__item">
+                            <a href="#">Клиенты для бизнеса</a>                            
+                        </li>
+                        <li class="hero__item">
+                            <a href="#">Определить телефон посетителя сайта</a>                           
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="target">
+                <h2 class="target__title">
+                    Завалим ваш отдел продаж
+                    <span>целевыми Лидами</span>
+                </h2>
+                <ul class="target__cards">
+                    <li class="target__card">
+                        <h5 class="target__card_title">
+                            Оплата за результат
+                        </h5>
+                        <p class="target__card_desc">
+                            Вы платите только за переданные 
+                            и получение вами целевые Лиды 
+                            — их контактные данные (телефон, 
+                            Telegram, email)
+                        </p>
+                    </li>
+                    <li class="target__card">
+                        <h5 class="target__card_title">
+                            Качественные лиды
+                        </h5>
+                        <p class="target__card_desc">
+                            Все передаваемые вам Лиды — это потенциальные клиенты, которые искали ваш товар или услугу
+                        </p>
+                    </li>
+                    <li class="target__card">
+                        <h5 class="target__card_title">
+                            Любой объём — на ваш выбор
+                        </h5>
+                        <p class="target__card_desc">
+                            Покупайте сколько контактов потенциальных клиентов в месяц — сколько требуется вам!
+                        </p>
+                    </li>
+                    <li class="target__card">
+                        <h5 class="target__card_title">
+                            Комплекс технологий
+                        </h5>
+                        <p class="target__card_desc">
+                            После расчёта стоимости Лидов и оплаты выбранного пакета — вы получите уникальный код для своего сайта, который позволит отслеживать контакты тех, кто не оставил заявку
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cost" id="cost">
+                <h2>
+                    Стоимость технологий 
+                    <span>«Лид Конвейер»</span>
+                </h2>
+                <p class="cost__desc">
+                    Оптимальные тарифы и цены на получение готовых Лидов и заявок с вашего сайта, без переплаты и абонентской платы
+                </p>
+                <ul class="cost__cards">
+                    <li class="cost__card">
+                        <div class="cost__card-decor">
+                            <span>Старт</span>
+                            <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z"
+                                    fill="#2D2D2D" />
+                            </svg>
+                        </div>
+                        <h4 class="cost__card-title">50 готовых лидов за&nbsp;<span class="gradient-text">22&nbsp;500&nbsp;₽</span></h4>
+                        <p class="cost__card-desc">Стартовый пакет для тех, кто хочет купить Лидов со своего сайта и повысить свои продаж</p>
+                        <ul class="cost__card-list">
+                            <li class="cost__card-item">50 Лидов</li>
+                            <li class="cost__card-item">450 ₽ за один Лид</li> 
+                            <li class="cost__card-item">Получение за 5–7 дней</li>
+                        </ul>
+                        <button class="btn">Купить</button>
+                    </li>
+
+                    <li class="cost__card">
+                        <div class="cost__card-decor">
+                            <span>Стандарт</span>
+                            <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z"
+                                    fill="#2D2D2D" />
+                            </svg>
+                        </div>
+                        <h4 class="cost__card-title">100 готовых лидов за&nbsp;<span class="gradient-text">40&nbsp;000&nbsp;₽</span></h4>
+                        <p class="cost__card-desc">Оптимальный пакет Лидов для любого отдела продаж и для повышения продаж своих товаров или услуг</p>
+                        <ul class="cost__card-list">
+                            <li class="cost__card-item">100 Лидов</li>
+                            <li class="cost__card-item">400 ₽ за один Лид</li>
+                            <li class="cost__card-item">Получение за 7–14 дней</li>
+                            <li class="cost__card-item">Возможность показа Лидам рекламы через Яндекс.Директ</li>
+                        </ul>
+                        <button class="btn coct__btn">Купить</button>
+                    </li>
+
+                    <li class="cost__card">
+                        <div class="cost__card-decor">
+                            <span>Премиум</span>
+                            <svg width="56" height="57" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z"
+                                    fill="#2D2D2D" />
+                            </svg>
+                        </div>
+                        <h4 class="cost__card-title">300 готовых лидов за&nbsp;<span class="gradient-text">90&nbsp;000&nbsp;₽</span></h4>
+                        <p class="cost__card-desc">Максимум целевых Лидов в ближайшее время для вашего бизнеса которые уже завтра могут стать Вашими клиентами!</p>
+                        <ul class="cost__card-list">
+                            <li class="cost__card-item">300 Лидов</li>
+                            <li class="cost__card-item">300 ₽ за один Лид</li>
+                            <li class="cost__card-item">Получение за 14–30 дней</li>
+                            <li class="cost__card-item">Возможность показа Лидам рекламы через Яндекс.Директ</li>
+                            <li class="cost__card-item">Готовый и конверсионный скрипт продаж целевым Лида </li>
+                        </ul>
+                        <button class="btn coct__btn">Купить</button>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="additionally">
+                <h2>Дополнительные услуги</h2>
+                <ul class="additionally__cards">
+                    <li class="additionally__card">
+                        <h4 class="cost__card-title">
+                            Создание промо-страницы
+                        </h4>
+                        <div class="additionally__price">
+                            <span>от</span>
+                            <p class="gradient-text">15&nbsp;000&nbsp;₽</p>
+                        </div>
+                        <button class="btn">Купить</button>
+                    </li>
+
+                    <li class="additionally__card">
+                        <h4 class="cost__card-title">
+                            Создание промо-страницы
+                        </h4>
+                        <div class="additionally__price">
+                            <span>от</span>
+                            <p class="gradient-text">15&nbsp;000&nbsp;₽</p>
+                        </div>
+                        <button class="btn">Купить</button>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="customers">
+                <h2>
+                    Клиенты, которые уже&nbsp;покупают 
+                    <span>Лидов для&nbsp;своего бизнеса</span>
+                </h2>
+                <p class="cost__desc">
+                    Более 5000 компаний по всей России уже используют покупку Лидов!
+                </p>
+                <ul class="customers__cards">
+                    <li class="customers__card">
+                        <img src="./images/picture/skoda.png" alt="logo">
+                    </li>
+                    <li class="customers__card">
+                        <img src="./images/picture/skillbox.png" alt="logo">
+                    </li>
+                    <li class="customers__card">
+                        <img src="./images/picture/worldClass.png" alt="logo">
+                    </li>
+                    <li class="customers__card">
+                        <img src="./images/picture/asolutBank.png" alt="logo">
+                    </li>
+                </ul>
+            </section>
+
+            <section class="reviews" id="reviews">
+                <h2>
+                    Отзывы клиентов 
+                </h2>
+                <p class="cost__desc reviews__desc">
+                    Более 89% наших клиентов сотрудничают с нами ежемесячно на протяжении более 2-х лет
+                </p>
+                <ul class="reviews__cards">
+                    <li class="reviews__card">
+                        <div class="reviews__rating">
+                            <span>5,0</span>
+                            <div>
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                            </div>
+                        </div>
+                        <p>
+                            «Стабильно получаем новые лиды из сервиса. С точки зрения рентабельности нареканий нет. Тёплая заявка 800–1000 рублей, конверсия, цена-качество устраивает. Общее впечатление достаточно хорошее, цена, качество, скорость».
+                        </p>
+                        <p class="reviews__sub_desc">Ниша: банкротство,<br> списание долгов</p>
+                    </li>
+                    <li class="reviews__card">
+                        <div class="reviews__rating">
+                            <span>4,8</span>
+                            <div>
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/defectiveStar.svg" alt="star">
+                            </div>
+                        </div>
+                        <p>
+                            «С вашим сервисом работаем с июня 22 года. Нас заинтересовало, и мы решили протестировать. Взяли минимальный пакет из 10 новых лидов, а потом, как он закончился, взяли повышенный пакет. Учитывая нашу сферу и посмотреть статистику, из 100 заинтересованных 15 в продажу. Это хороший результат».
+                        </p>
+                        <p class="reviews__sub_desc">Ниша: банкротство,<br> списание долгов</p>
+                    </li>
+                    <li class="reviews__card">
+                        <div class="reviews__rating">
+                            <span>5,0</span>
+                            <div>
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                            </div>
+                        </div>
+                        <p>
+                            «С сервисом работаем чуть меньше года. Немного сомневались, но согласились попробовать, а после продолжили работать. Новые клиенты появились сразу, передали на наш колл-центр. С вашего источника дешевле, чем с других сервисов. Безусловно, с вами стоит работать».
+                        </p>
+                        <p class="reviews__sub_desc">Ниша: банкротство,<br> списание долгов</p>
+                    </li>
+                    <li class="reviews__card">
+                        <div class="reviews__rating">
+                            <span>4,9</span>
+                            <div>
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/targetStar.svg" alt="star">
+                                <img class="reviews__rating-decor" src="./images/icon/defectiveStar.svg" alt="star">
+                            </div>
+                        </div>
+                        <p>
+                            «С вашей компанией работаем более 2 х лет, сотрудничество полезное. Мы все посмотрели, разобрались, что сервис даёт реально целевые заявки. Заключили контракт на 23 000 рублей, окупилось. Понравилась технология, она помогает нам получать лиды».
+                        </p>
+                        <p class="reviews__sub_desc">Ниша: банкротство,<br> списание долгов</p>
+                    </li>
+                </ul>
+
+                <ul class="reviews__videos">
+                    <li class="reviews__item">
+                        <div class="reviws__video">
+                            <button class="reviews__btn">
+                                <img src="./images/icon/iconPlay.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p>Отзыв 1: название</p>
+                    </li>
+                
+                    <li class="reviews__item">
+                        <div class="reviws__video">
+                            <button class="reviews__btn">
+                                <img src="./images/icon/iconPlay.svg" alt="icon">
+                            </button>
+                        </div>                
+                        <p>Отзыв 2: название</p>
+                    </li>
+                
+                    <li class="reviews__item">
+                        <div class="reviws__video">
+                            <button class="reviews__btn">
+                                <img src="./images/icon/iconPlay.svg" alt="icon">
+                            </button>
+                        </div>
+                        <p>Отзыв 3: название</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="technology">
+                <div class="technology__BG">
+                    <img src="./images/picture/technologyBG.png" alt="picture">
+                </div>
+                <div class="technology__content">
+                    <h2 class="technology__title">
+                        Технология
+                        <span>«Лид Конвейер»</span>
+                    </h2>
+                    <div class="technology__text">
+                        <p class="reviews__desc">
+                            Мы разработали программный комплекс, который позволяет определять контактные данные (телефон, Telegram, email) тех посетителей вашего сайта, кто был на сайте, но не оставил заявку.
+                        </p>
+                        <p class="reviews__desc">
+                            Далее, на основе собственных разработок, мы идентифицируем пользователей по интересам и интересующим их товарам и услугам — вам передаём только тех, кто заинтересован в вашей услуге или товаре.
+                        </p>
+                        <p class="reviews__desc">
+                            Вы платите только за результат — за полученных Лидов (заявки) на свои услуги или товары.
+                        </p>
+                    </div>                    
+                </div>
+            </section>
+
+            <section class="registration">
+                <div class="registration__text">
+                    <h2 class="registration__title">Зарегистрируйтесь и добавьте свой проект в систему — начните получать Лидов сегодня!</h2>
+                    <button class="btn">Зарегистрироваться</button>
+                </div>
+                <div class="registration__BG">
+                    <img src="./images/picture/registrationBG.png" alt="picture">
+                </div>
+            </section>
+
+            <section class="swiper" id="swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide" id="slide-1">
+                          <h2>
+                            Как это работает?
+                          </h2>
+                          <div class="slide__content">
+                            <div>
+                              <div class="slide__num">
+                                <span>01</span>
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <rect width="72" height="72" fill="url(#pattern0_5015_50)" />
+                                  <defs>
+                                    <pattern id="pattern0_5015_50" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_5015_50" transform="scale(0.0138889)" />
+                                    </pattern>
+                                    <image id="image0_5015_50" width="72" height="72" preserveAspectRatio="none"
+                                      xlink:href="data:image/png;base64,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" />
+                                  </defs>
+                                </svg>
+                              </div>
+                              <h3 class="slide__sub-title">
+                                Регистрация и добавление проекта в систему
+                              </h3>
+                            </div>
+                            <ol>
+                              <li>
+                                <p class="slide__content-text">
+                                  Зарегистрируйтесь в нашем личном кабинете
+                                </p>
+                              </li>
+                              <li>
+                                <p class="slide__content-text">
+                                  При добавление проекта вам необходимо указать URL (адрес) своего сайта
+                                </p>
+                              </li>
+                              <li>
+                                <p class="slide__content-text">
+                                  Для вашего сайта будет сгенерирован уникальный код, который необходимо установить на свой сайт
+                                  (в шаблоне сайта, перед тегом &lt;/head&gt;)
+                                </p>
+                              </li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide" id="slide-2">
+                          <h2>
+                            Как это работает?
+                          </h2>
+                          <div class="slide__content">
+                            <div>
+                              <div class="slide__num">
+                                <span>02</span>
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="72" height="72" fill="url(#pattern0_5015_171)"/>
+                                    <defs>
+                                    <pattern id="pattern0_5015_171" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_5015_171" transform="scale(0.0138889)"/>
+                                    </pattern>
+                                    <image id="image0_5015_171" width="72" height="72" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                              </div>
+                              <h3 class="slide__sub-title">
+                                Выбор пакета и количества Лидов
+                              </h3>
+                            </div>                           
+                            <p class="slide__content-text">
+                                После добавления проекта в систему, вам необходимо выбрать тот пакет и количество Лидов, которое вам необходимо.
+                            </p>
+                          </div>
+                  
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide" id="slide-3">
+                          <h2>
+                            Как это работает?
+                          </h2>
+                          <div class="slide__content">
+                            <div>
+                              <div class="slide__num">
+                                <span>03</span>
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="72" height="72" fill="url(#pattern0_5015_215)"/>
+                                    <defs>
+                                    <pattern id="pattern0_5015_215" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_5015_215" transform="scale(0.0138889)"/>
+                                    </pattern>
+                                    <image id="image0_5015_215" width="72" height="72" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                              </div>
+                              <h3 class="slide__sub-title">
+                                Оплата проекта
+                              </h3>
+                            </div>
+                            <p class="slide__content-text">
+                                Оплатить Лидов вы сможете пластиковой картой или безналичным переводом.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide" id="slide-4">
+                          <h2>
+                            Как это работает?
+                          </h2>
+                          <div class="slide__content">
+                            <div>
+                              <div class="slide__num">
+                                <span>04</span>
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="72" height="72" fill="url(#pattern0_5015_137)"/>
+                                    <defs>
+                                    <pattern id="pattern0_5015_137" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_5015_137" transform="scale(0.0138889)"/>
+                                    </pattern>
+                                    <image id="image0_5015_137" width="72" height="72" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                              </div>
+                              <h3 class="slide__sub-title">
+                                Получение кода для сайта
+                              </h3>
+                            </div>
+                            <p class="slide__content-text">
+                                После оплаты, система для вас сгенерирует код, который вам необходимо установить на свой сайт (в шаблоне сайта, перед тегом &lt;/head&gt;).
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide" id="slide-5">
+                          <h2>
+                            Как это работает?
+                          </h2>
+                          <div class="slide__content">
+                            <div>
+                              <div class="slide__num">
+                                <span>05</span>
+                                <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="72" height="72" fill="url(#pattern0_5015_254)"/>
+                                    <defs>
+                                    <pattern id="pattern0_5015_254" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_5015_254" transform="scale(0.0138889)"/>
+                                    </pattern>
+                                    <image id="image0_5015_254" width="72" height="72" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                              </div>
+                              <h3 class="slide__sub-title">
+                                Начало получения Лидов
+                              </h3>
+                            </div>
+                            <p class="slide__content-text">
+                                В зависимости от вашей тематики (услуги или товара),
+                                а также объёма вашего трафика сайта система будет добавлять в личном кабинете контакты потенциальных клиентов,
+                                заинтересованных в вашей услуги и из вашего региона.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Пагинация -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="presentation">
+                <h2 class="presentation__title">
+                    Мы подготовили для вас<br>видео-презентацию
+                    <span>
+                        нашей работы
+                        <img src="./images/icon/videoCamera.svg" alt="icon">
+                    </span>
+                </h2>
+                <div class="presentation__video">
+                    <img src="./images/icon/iconPlay.svg" alt="play">
+                </div>
+            </section>
+
+            <section class="advantages">
+                <h2>
+                    Почему лучше 
+                    <span>заказать Лидов у нас</span>
+                </h2>
+                <p class="cost__desc advantages__desc">
+                    Лидогенерация — это стабильное получение клиентов и выполнение плана по продажам!
+                </p>
+                <ul class="advantages__long-cards">
+                    <li class="advantages__long-card">
+                        <span>01</span>
+                        <p>
+                            Только качественные Лиды. Мы идентифицируем только тех посетителей, которым интересна ваша услуги и из вашего города.
+                        </p>
+                    </li>
+                    <li class="advantages__long-card">
+                        <span>02</span>
+                        <p>
+                            Доступная цена и отсутствие минимального порога. У нас отсутствует минимальная плата за сервис, подписка и т.п. Вы покупаете столько Лидов — сколько хотите!
+                        </p>
+                    </li>
+                    <li class="advantages__long-card">
+                        <span>03</span>
+                        <p>
+                            Техническая поддержка и комплекс услуг. Мы работаем для вас 24/7!
+                        </p>
+                    </li>
+                </ul>
+                <ul class="advantages__short-cards">
+                    <li class="advantages__short-card">
+                        <img src="./images/icon/advIcon1.svg" alt="icon">
+                        <p>
+                            <strong>Источник Лидов:</strong><br> 
+                            контекстная реклама в Яндекс.Директ, SEO, SMM и другая реклама дополняют технологию 
+                            «Лид Конвейер».
+                        </p>
+                    </li>
+                    <li class="advantages__short-card">
+                        <img src="./images/icon/advIcon2.svg" alt="icon">
+                        <p>
+                            <strong>Вы экономите на рекламе: </strong><br> 
+                            получая контактные данных тех, кто не оставил заявки, но заинтересован в Вашем товаре или услуге — это дополнительный канал продаж.
+                        </p>
+                    </li>
+                    <li class="advantages__short-card">
+                        <img src="./images/icon/advIcon3.svg" alt="icon">
+                        <p>
+                            <strong>Вы сможете прогнозировать продажи:</strong><br> 
+                            чтобы не ждать, когда-же кто‑то позвонит или оставит заявку, звоните и продавайте первым!
+                        </p>
+                    </li>
+                    <li class="advantages__short-card">
+                        <img src="./images/icon/advIcon4.svg" alt="icon">
+                        <p>
+                            <strong>Безопасно:</strong><br> 
+                            это абсолютно легальный и законный метод получения Лидов.
+                        </p>
+                    </li>
+                    <li class="advantages__short-card">
+                        <img src="./images/icon/advIcon5.svg" alt="icon">
+                        <p>
+                            <strong>Быстро:</strong><br> 
+                            запуск и получение первых Лидов обычно занимает 5–7 дней, а добавление проекта в систему менее 1 часа.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="registration registration_two">
+                <div class="registration__BG">
+                    <img src="./images/picture/registrationBG2.png" alt="picture">
+                </div>
+                <div class="registration__text">
+                    <h2 class="registration__title">Давайте принесём результат Вашему бизнесу? Завалите своей отдел продаж Лидами!</h2>
+                    <button class="btn">Зарегистрироваться</button>
+                </div>               
+            </section>
+
+            <section class="faq">
+                <h2 class="faq__title">
+                    Вопросы и ответы 
+                </h2>
+                <div class="faq__content">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                На сколько это безопасно, законно и может ли навредить моему сайту?
+                                <svg class="accordion-header__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.785 2V48M2 25H48" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.<br><br>
+                                    Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.<br><br>
+                                    Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                Откуда берутся номера телефонов?
+                                <svg class="accordion-header__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.785 2V48M2 25H48" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.<br><br>
+                                    Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.<br><br>
+                                    Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                Смогу ли я сам установить код на сайт?
+                                <svg class="accordion-header__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.785 2V48M2 25H48" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.<br><br>
+                                    Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.<br><br>
+                                    Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                На какую CMS или конструктор можно установить код «Лид Конвейер»?
+                                <svg class="accordion-header__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.785 2V48M2 25H48" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.<br><br>
+                                    Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.<br><br>
+                                    Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                Как оплатить ваш сервис?
+                                <svg class="accordion-header__icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.785 2V48M2 25H48" stroke="#2D2D2D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Происходит обработка обезличенных данных (cookies). Cookies - маленький фрагмент данных, который сохраняется в браузере и передается при обращению к сайтам.<br><br>
+                                    Вы можете разместить в политике конфиденциальности условия с согласием на передачу и обработку cookies посетителями вашего сайта. Таким образом, это гарантирует полную легальность работы с данными.<br><br>
+                                    Для сайта это не может навредить, и санкций со стороны поисковых системы (Яндекс, Google) нет.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq__BG">
+                        <img src="./images/picture/faqBG.png" alt="picture">
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="info__title">
+                    <h2>
+                        <span>Лидогенерация —</span>
+                        это новая эра маркетинга!
+                    </h2>
+                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="72" height="72" fill="url(#pattern0_753_331)" />
+                        <defs>
+                            <pattern id="pattern0_753_331" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_753_331" transform="scale(0.0138889)" />
+                            </pattern>
+                            <image id="image0_753_331" width="72" height="72" preserveAspectRatio="none"
+                                xlink:href="data:image/png;base64,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" />
+                        </defs>
+                    </svg>
+                    <button class="btn">Купить Лиды</button>
+                </div>
+                <div class="info__content">
+                    <div class="expandable-block">
+                        <div class="content">
+                            <p>
+                                Использование лидогенерации снижает стоимость привлечения клиентов, позволяет бизнесу сосредоточиться на основном продукте и значительно упрощает процесс работы.<br><br>
+                                Стоимость заявок на нашей платформе зависит от их качества и сложности. Мы предоставляем прозрачные тарифы и выгодные условия сотрудничества.<br><br>
+                                Наша биржа — это место встречи тех, кто заказывает заявки, и тех, кто их предоставляет. Мы создаём условия для успешного сотрудничества и взаимной выгоды.<br><br>
+                            </p>
+                            <p class="extra-content">
+                                Биржа лидов — это современное решение для бизнеса, которое позволяет эффективно находить новых клиентов и масштабировать свою деятельность.<br><br>
+                                Использование биржи помогает оптимизировать стоимость привлечения заявок и получить готовые решения для лидогенерации. Наш сервис предоставляет уникальную возможность купить или продать лиды, обеспечивая прозрачность и надёжность каждой сделки.<br><br>
+                                Мы объединяем вебмастеров, готовых передать заявки, и бизнесы, которым нужны новые клиенты. На нашей платформе вебмастеры размещают готовые заявки, которые затем приобретаются бизнесами для привлечения новых клиентов. Это упрощает процесс взаимодействия и повышает эффективность работы. Каждая заявка проходит тщательную проверку, чтобы обеспечить максимальную ценность для бизнеса.<br><br>
+                                Вы покупаете лиды, уже готовые к взаимодействию, и получаете гарантированный результат.
+                            </p>
+                        </div>
+                        <button class="toggle-button">Читать больше</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact__wrap">
+                    <div class="contact__content">
+                        <h2>
+                            Контакты
+                        </h2>
+                        <p class="cost__desc contact__desc">
+                            Есть вопрос, или вы хотите получить бесплатную консультацию? Свяжитесь с нами, и&nbsp;мы предоставим необходимую информацию!
+                        </p>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <span>Адрес офиса</span>
+                                <a href="https://maps.app.goo.gl/nHmZaruJsQMvdrRX9" target="_blank" rel="noopener noreferrer">
+                                    г.&nbsp;Москва, ул.&nbsp;Дубининская, д.&nbsp;53
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <span>Телефон:</span>
+                                <a href="tel:+74951183282">
+                                    +7 495 118-32-82
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <span>Электронная почта</span>
+                                <a href="mailto:mailbox@leadconveer.ru">
+                                    mailbox@leadconveer.ru
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <span>Или напишите нам в любимом мессенджере:</span>
+                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_753_598)">
+                                            <path
+                                                d="M34 0H6C2.68629 0 0 2.68629 0 6V34C0 37.3137 2.68629 40 6 40H34C37.3137 40 40 37.3137 40 34V6C40 2.68629 37.3137 0 34 0Z"
+                                                fill="#37AEE2" />
+                                            <path d="M15.5469 31.5625C14.6875 31.5625 14.7656 31.25 14.5312 30.4688L12.0312 22.2656L31.1719 11.0156"
+                                                fill="#C8DAEA" />
+                                            <path d="M15.5469 31.5625C16.0938 31.5625 16.4062 31.25 16.7969 30.9375L20.3125 27.5781L15.9375 24.9219"
+                                                fill="#A9C9DD" />
+                                            <path
+                                                d="M15.9375 24.922L26.4844 32.6563C27.5781 33.3595 28.5156 32.9688 28.8281 31.5626L33.125 11.4063C33.5156 9.6876 32.4219 8.90635 31.25 9.45322L6.17185 19.1407C4.53123 19.7657 4.53123 20.7813 5.85935 21.172L12.3437 23.2032L27.1875 13.7501C27.8906 13.3595 28.5156 13.5157 28.0469 14.0626"
+                                                fill="#F6FBFE" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_753_598">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact__BG">
+                        <img src="./images/picture/contactBG.png" alt="picture">
+                    </div>
+                </div>                
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <h3>© 2025 Все права защищены. Технология «Лид Конвейер» - лидогенерация для бизнеса.</h3>
+            <p>ООО «ДС-ГРУПП» ИНН 7801355174 ОГРН 1187847129425</p>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#">Блог</a>       
+                </li>
+                <li class="footer__item">
+                    <a href="#">Договор-оферта</a>                    
+                </li>
+                <li class="footer__item">
+                    <a href="#">Политика конфиденциальности</a>                   
+                </li>
+                <li class="footer__item">
+                    <a href="#">Соглашение об обработке данных</a>                    
+                </li>
+                <li class="footer__item">
+                    <a href="#">Вход в личный кабинет</a>                    
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
