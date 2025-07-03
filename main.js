@@ -31,15 +31,30 @@ document.addEventListener('DOMContentLoaded', function () {
   headers.forEach(header => {
     header.addEventListener('click', function () {
       const content = this.nextElementSibling;
+      const icon = this.querySelector('.accordion-header__icon'); // Находим иконку в текущем заголовке
       const isOpen = content.classList.contains('open');
 
+      // Закрываем все другие аккордеоны и возвращаем их иконки
       document.querySelectorAll('.accordion-content.open').forEach(openContent => {
         if (openContent !== content) {
           openContent.classList.remove('open');
+          
+          // Находим иконку в заголовке соседнего аккордеона
+          const otherHeader = openContent.previousElementSibling;
+          const otherIcon = otherHeader.querySelector('.accordion-header__icon');
+          if (otherIcon) {
+            otherIcon.style.display = 'block'; // или 'inline' в зависимости от типа иконки
+          }
         }
       });
 
+      // Переключаем текущий аккордеон
       content.classList.toggle('open', !isOpen);
+
+      // Управляем видимостью иконки текущего заголовка
+      if (icon) {
+        icon.style.display = content.classList.contains('open') ? 'none' : 'block';
+      }
     });
   });
 });
@@ -93,12 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
           bullet.classList.toggle('active', i === currentIndex);
       });
   }
-
-  // Автоматическая прокрутка (опционально)
-  // setInterval(() => {
-  //     currentIndex = (currentIndex + 1) % swiperSlides.length;
-  //     goToSlide(currentIndex);
-  // }, 3000);
 });
 
 
